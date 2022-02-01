@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Titulo -->
+    <title>Signin - Riqui</title>
+</head>
+<body>
+    <div class="gridIndex"> 
+        <header>
+            <!-- Aqui pondremos nuestro encabezado para todas las hojas-->
+            <!-- Menú que se encuentra en la parte superior derecha -->
+                <Div class="menuDerecha">
+                    <nav class="barrad">
+                        <ul class="menud">
+                            <li>
+                                <a href="../index.html"> Home </a>
+                            </li>
+                            <li>
+                                <a href="../Paginas/Historia.html"> Historia </a>
+                            </li>
+                            <li>
+                                <a href="../Paginas/Productos.html"> Productos </a>
+                            </li>
+                            <li>
+                                <a href="../Paginas/Rentabilidad.html"> Rentabilidad </a>
+                            </li>
+                            <li>
+                                <a href="../Paginas/Contactanos.html"> Contactanos </a>
+                            </li>
+                            <li>
+                                <a href="../Paginas/FAQ.html"> FAQ </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </Div>
+                
+            <!-- Parte principal del encabezado -->   
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../Imagenesriqui/Logo.png" alt="Logo de Riqui">
+                    </a>
+                </div>
+            
+            <!-- Menú que se encuentra en la parte superior Izquierda -->
+                <Div class="menuIzquierda">
+                    <nav class="barrai">
+                        <ul class="menui">
+                            <li>
+                                <a href="Login.html"> Login </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </Div>
+        </header>
+
+        <section class="seccionInterna">
+            <H1 class="tituloHojas">Signin</H1>
+        </section>
+        
+        <main>  
+            <form>
+                <fieldset class="bordeFormulario">
+                    <legend class="formNombre"> Registrate aquí </legend>
+                        <div>
+                            <label for="nombre">Completa tu Nombre y apellido</label>
+                            <input type="text" name=nombre placeholder="Completa tu nombre y apellido aquí" required class="inputGeneral">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email">Completa tu email</label>
+                            <input type="email" name=email placeholder="Completa tu email aquí" required class="inputGeneral">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="pais">Selecciona tu pais</label>
+                                <select name="pais">
+                                    <option value="Pais">Pais</option>
+                                    <option value="Peru">Perú</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Chile">Chile</option>
+                                </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="sexo">Genero</label><br>
+                                <input type="radio" name="sexo" value="Hombre" class="opcionMultiple"> Hombre <br>
+                                <input type="radio" name="sexo" value="Mujer" class="opcionMultiple"> Mujer <br>
+                                <input type="radio" name="sexo" value="No binario" class="opcionMultiple"> No binario <br>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="contraseña">Crea una contraseña</label>
+                                <input type="password" name="contraseña" required placeholder="Crea tu contraseña aquí" class="inputGeneral">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="contraseñax2">Repite la contraseña</label>
+                                <input type="password" name="contraseñax2" required placeholder="Repite la contraseña aquí" class="inputGeneral">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Enviar" class="botonForm">
+                            <input type="reset" value="Resetear" class="botonForm">
+                        </div>
+                </fieldset>
+            </form>
+            <br>  
+            <a href="Login.html"> <input type="button" value = "Ir a Login" class="botonForm"> </a>
+        </main>
+        
+        <footer>
+            <!-- Aquí van los derechos reservados -->
+            <h6> Derechos Reservados de Riqui SAC </h6>
+                <a href="https://www.instagram.com/riquideportes/"> 
+                    <img src="../imagenesriqui/Insta.png" alt="Logo de Instagram">
+                </a>
+        </footer>
+    </div>
+</body>
+</html>
